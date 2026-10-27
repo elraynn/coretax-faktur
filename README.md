@@ -162,7 +162,9 @@ Saya tidak punya akses langsung ke Coretax, jadi saya tidak bisa mencoba upload 
 - Struktur XML-nya saya samakan dengan hasil aplikasi *Converter e-Faktur Coretax* v1.6 dari DJP, termasuk urutan elemen, cara menulis elemen kosong, BOM di awal file, dan nama elemen `BuyerAdress` (memang begitu ejaannya di format DJP).
 - Saya memakai file hasil converter dari aplikasi penjualan yang sudah rutin di-upload ke Coretax tanpa keluhan: 42 faktur dengan 212 baris barang. Data yang sama saya hitung ulang lewat library ini, dan 210 dari 212 baris hasilnya sama persis sampai sen. Dua sisanya adalah PPN yang di aplikasi asal dibulatkan dengan cara bankir, dan library menandainya sebagai peringatan selisih satu rupiah. Dari file yang sama, library juga menemukan 3 faktur yang pembelinya dikirim sebagai pemilik NPWP padahal NPWP-nya nol semua.
 
-Ini bukan aplikasi resmi DJP. Kalau ada file dari library ini yang ditolak Coretax, tolong buka issue dan sertakan pesan error-nya beserta contoh faktur yang datanya sudah disamarkan. Laporan seperti itu yang paling membantu memperbaiki library ini.
+Ini bukan aplikasi resmi DJP. Library ini hanya membantu membuat file XML. Kebenaran isi faktur, termasuk tarif, kode transaksi, dan data pembeli, tetap menjadi tanggung jawab wajib pajak yang meng-upload-nya. Periksa hasilnya sebelum di-upload, dan untuk kasus yang tidak biasa konsultasikan dengan konsultan pajak.
+
+Kalau ada file dari library ini yang ditolak Coretax, tolong buka issue dan sertakan pesan error-nya beserta contoh faktur yang datanya sudah disamarkan. Laporan seperti itu yang paling membantu memperbaiki library ini.
 
 ## Lisensi
 
