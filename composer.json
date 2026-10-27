@@ -1,0 +1,29 @@
+{
+    "name": "elrayn/coretax-faktur",
+    "description": "Generate Coretax (DJP) Faktur Pajak Keluaran XML straight from your app, with the tax math and validation done for you",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["coretax", "faktur pajak", "efaktur", "ppn", "djp", "indonesia", "tax invoice"],
+    "authors": [
+        {
+            "name": "Muhammad Rayhan"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-dom": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elrayn\\CoretaxFaktur\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Elrayn\\CoretaxFaktur\\Tests\\": "tests/"
+        }
+    }
+}
